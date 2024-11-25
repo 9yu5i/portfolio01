@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Background Change</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: lightblue; /* 초기 색상 */
+      transition: background-color 0.5s ease; /* 배경 색상 전환 효과 */
+    }
+    .section {
+      height: 100vh; /* 화면 전체 높이 */
+    }
+    .section1 {
+      background-color: transparent; /* 개별 섹션의 배경은 투명 */
+    }
+    .section2 {
+      background-color: transparent;
+    }
+    .section3 {
+      background-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="section section1"></div>
+  <div class="section section2"></div>
+  <div class="section section3"></div>
+
+  <script>
+    // 스크롤 이벤트 핸들러
+    window.addEventListener('scroll', () => {
+      const scrollPosition = window.scrollY; // 현재 스크롤 위치
+      const viewportHeight = window.innerHeight; // 뷰포트 높이
+      const body = document.body;
+
+      // 각 섹션별 배경색 변경
+      if (scrollPosition < viewportHeight) {
+        body.style.backgroundColor = 'lightblue'; // 첫 번째 섹션
+      } else if (scrollPosition < viewportHeight * 2) {
+        body.style.backgroundColor = 'lightgreen'; // 두 번째 섹션
+      } else {
+        body.style.backgroundColor = 'lightpink'; // 세 번째 섹션
+      }
+    });
+  </script>
+</body>
+</html>
