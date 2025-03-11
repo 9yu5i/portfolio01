@@ -31,11 +31,12 @@ body { background: url(../img/main/opacity.png); }
 .top { 
   position:relative;
   display: flex;  
-  padding-top: 6vh;
+  padding-top: 1.5vh;
 }
-.top p:nth-child(1){
-  padding-top: 50px; margin-right: 20px;
-  font-size:2vw;
+.top p:nth-child(1) {
+  padding-top: 20px;
+  margin-right: 20px;
+  font-size: 2vw;
   font-weight: 500;
   z-index: 1;
 }
@@ -43,22 +44,26 @@ body { background: url(../img/main/opacity.png); }
   font-size:5vw;
   font-weight: 500;
   z-index: 1;
+  margin-top: -4%;
 }
-.top p:nth-child(3){
-  font-size:1.4vw;
+.top p:nth-child(3) {
+  font-size: 1.4vw;
   font-weight: 500;
   z-index: 1;
+  padding-left: 15px;
 }
-
 .mid{ 
   position:relative;
-  left:50%;
+  left:45%;
+  top: 5%;
   display: flex;
 }
-.mid p:nth-child(1){
+.mid p:nth-child(1) {
   font-size: 1.3vw;
   font-weight: 500;
   z-index: 1;
+  padding-top: 50px;
+  margin-right: 10px;
 }
 .mid p:nth-child(2){
   font-size: 6vw;
@@ -72,10 +77,12 @@ body { background: url(../img/main/opacity.png); }
   left:15%;
   display: flex;
 }
-.btm p:nth-child(1){
-  font-size:2vw;
+.btm p:nth-child(1) {
+  font-size: 2vw;
   font-weight: 500;
   z-index: 1;
+  padding-top: 45px;
+  margin-right: 10px;
 }
 .btm p:nth-child(2){
   font-size:6vw;
@@ -85,37 +92,40 @@ body { background: url(../img/main/opacity.png); }
 
 .slo{
   position:absolute;
-  top:80vh;
+  top:85vh;
   left: 10%;
-  font-size:1.4vw;
+  font-size:2vw;
   font-weight: 500;
 }
 
   
-.frame1{
-  position:absolute;
-  bottom:-20px;
-  left:100px;
+.frame1 {
+  position: absolute;
+  bottom: -20px;
+  left: 90px;
+  width: 45%;
 }
-.frame2{
-  position:absolute;
-  top:0;
-  left:30%;
+.frame2 {
+  position: absolute;
+  top: 0;
+  left: 38%;
+  width: 50%;
 }
-.frame3{
-  position:absolute;
-  top:65%;
-  left:35%;
+.frame3 {
+  position: absolute;
+  top: 65%;
+  left: 30%;
+  width: 70%;
 }
 .frame4{
   position:absolute;
   left: -48px;
   top: 0px;
 }
-.frame5{
-  position:absolute;
-  right: -50px;
-  top:0px;
+.frame5 {
+  position: absolute;
+  right: 32%;
+  top: 32px;
 }
 .frame{
   position:absolute;
@@ -135,16 +145,18 @@ body { background: url(../img/main/opacity.png); }
   position: fixed;
   top: 30px;
   left: 2%;
+  
 }
 .menu p:nth-child(2){
   position: fixed;
   top: 30px;
   right: 2%;
+  display: inline-block;
 }
 .menu p:nth-child(3){
   position: fixed;
   right: 2%;
-  top:85vh;
+  top:90vh;
 }
 
 .menu p:nth-child(1):after {
@@ -160,6 +172,7 @@ body { background: url(../img/main/opacity.png); }
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: -1;
+  
 }
 
 .menu p:nth-child(1):hover::after {
@@ -372,6 +385,11 @@ body { background: url(../img/main/opacity.png); }
 
 
 /* .name에 호버 시 이미지가 순서대로 나타나도록 설정 */
+
+.namr{
+  cursor: pointer;
+  margin-top: -50%;
+}
 .name:hover ~ .image-container .img1 {
   opacity: 1;
   transform: translateY(0);
@@ -424,7 +442,11 @@ body { background: url(../img/main/opacity.png); }
   transition-delay: 1.6s;
 }
 
-
+.image-container3{
+  position: fixed;
+  left: -18%;
+  top: 40%;
+}
 .diverse:hover + .image-container3 .ps{
   opacity: 1;
   transform: translateY(0);
