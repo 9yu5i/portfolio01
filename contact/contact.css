@@ -41,19 +41,19 @@ body{
 
   .menu {
     position: relative;
-    font-size: 3.8rem;
+    font-size: 2.5rem;
     z-index: 99;
     font-weight: bold;
   }
   .menu p:nth-child(1){
     position: fixed;
       top: 30px;
-      left: 1%;
+      left: 2%;
   }
   .menu p:nth-child(2){
     position: fixed;
     top: 30px;
-    right: 1%;
+    right: 2%;
   }
  /*  .menu p:nth-child(3){
     position: relative;
@@ -63,8 +63,8 @@ body{
   
     .menu p:nth-child(3){
       position: fixed;
-      left: 1%;
-      top: 800px;
+      left: 2%;
+      top: 90vh;
     }
     
     .menu p:nth-child(1):after {
@@ -88,17 +88,17 @@ body{
     
     .menu p:nth-child(2):after {
       content: "";
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 240px;
-  height: 147px;
-  background: url('../img/main/starss.png') no-repeat center;
-  background-size: cover;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: -1;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 240px;
+      height: 147px;
+      background: url('../img/main/starss.png') no-repeat center;
+      background-size: cover;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: -1;
     }
     
     .menu p:nth-child(2):hover::after {
@@ -229,16 +229,16 @@ body{
 
 
 .projects2{
-  position: relative;
-  left: 33%;
-  top: -10px;
-  font-size: 15rem;
-  font-weight: 800;
+  position:absolute;
+  left: 50%; transform: translateX(-50%);
+  top:16vh;
+  font-size: 10vw;
+  font-weight: 900;
   letter-spacing: -0.1em;
   z-index: 99;
   display: inline-block;
 }
-.container2 a span{
+.container2 span{
   color: #1c1c1c;
 }
 
@@ -273,18 +273,17 @@ body{
 }
 
 .btm{
-  position: relative;
-  top: 120px;
-  left: 236px;
-  
+  position:absolute;
+  top:45vh;
+  left:50%; transform: translateX(-50%);  
 }
 .btm p{
-  font-size: 5.4rem;
-  font-weight: 600;
+  font-size: 2.4vw;
+  font-weight: 200;
   line-height: 1.8;
 }
 .text{
-  display: inline-block;
+  display: inline-block; text-align: center;
 }
 
 .icon{
@@ -294,6 +293,7 @@ body{
   display: block;
  /*  padding-bottom: 40px; */
 }
+.icon a { display: inline-block; position: relative; }
 
 .resume{
   position: relative;
@@ -317,15 +317,16 @@ body{
 
 .svgg{
   position: relative;
-  top: -610px;
-  left: 33%;
+  left: 50%;
+  transform: translateX(-21%);
+  top: 5vh;
 }
 
 .icon a:nth-child(1):after {
   content: "";
   position: absolute;
-  top: 44%;
-  left: 2%;
+  top: 70%;
+  left: 15%;
   transform: translate(-50%, -50%);
   width: 150px;
   height: 155px;
@@ -343,7 +344,7 @@ body{
   content: "";
   position: absolute;
   top: 44%;
-  left: 15.8%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 150px;
   height: 155px;
