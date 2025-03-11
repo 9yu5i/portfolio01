@@ -1,14 +1,6 @@
 @charset "utf-8";
 
-@charset "utf-8";
-
-@charset "utf-8";
-
-html{
-  font-size: 10px;
-}
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,8 +8,7 @@ html{
 body{
   font-family: "Lexend Deca Regular", sans-serif;
   font-size: 1.6rem;
-  line-height: 1.35;
-  color: black;
+  color: #000;
 }
 table{
   width: 100%;
