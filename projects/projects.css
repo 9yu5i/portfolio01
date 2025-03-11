@@ -12,44 +12,32 @@ p{
 
 #main {
   width: 100%;
-  height: auto; 
-  margin:0 auto;
-  animation: fadein 5s ease 3s;
-    -webkit-animation: fadein 3s; /* Safari and Chrome */
-  
-  
-  
-  }
-  @keyframes fadein {
-      from {
-          opacity: 0;
-      }
-      to {
-          opacity: 1;
-      }
-  }
-  
-  @-webkit-keyframes fadein { /* Safari and Chrome */
-      from {
-          opacity: 0;
-      }
-      to {
-          opacity: 1;
-      }
-  }
-
+  animation: fadein 5s ease;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 
   .menu {
-      position: fixed;
-      font-size: 3.8rem;
+      position:absolute;
+      left: 0;
+      top:0;
+      width: 100%;
+      height: 100vh;
+      font-size: 3rem;
       z-index: 999;
       font-weight: 700;
     }
     .menu p:nth-child(1){
-      position: relative;
+      position: fixed;
       top: 30px;
-      left: 30px;
+      left: 1%;
     }
    /*  .menu p:nth-child(2){
       position: relative;
@@ -57,26 +45,22 @@ p{
       left: 1720px;
     } */
     .menu p:nth-child(2){
-      position: relative;
-      left: 1075%;
-      top: 800px;
+      position: fixed;
+      right: 2%;
+      top:85vh;
     }
     
     .menu p:nth-child(3){
-      position: relative;
-      left: 20%;
-      top: 750px;
+      position: fixed;
+      left: 2%;
+      top: 85vh;
     }
 
     
     .menu p:nth-child(1):after {
       content: "";
       position: absolute;
-      top: 49%;
-      left: 42.2%;
-      transform: translate(-50%, -50%);
-      width: 143px;
-      height: 74px;
+  
       background: url('../img/main/about.png') no-repeat center;
       background-size: cover;
       opacity: 0;
@@ -162,7 +146,15 @@ p{
 
     
     /*menu ani*/
+    .stars{
+      position: fixed;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);      
+    }
 
+
+    
 .container {
   display: flex;
   cursor: pointer;
@@ -231,10 +223,11 @@ p{
 
 
 .projects2{
-  position: relative;
-  left: 615px;
-  top: 350px;
-  font-size: 15rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 300px;
+  font-size: 10vw;
   font-weight: 800;
   letter-spacing: -0.1em;
   z-index: 99;
@@ -259,6 +252,7 @@ p{
   position: relative;
   width: 100%;
   height: auto;
+  margin-top: -70px;
   will-change: transform; /* 성능 최적화 */
 }
 
@@ -271,66 +265,7 @@ p{
 
 #tabsec{
   position: relative;
-  top: 700px;
-}
-.tab{
-  display:none
-}
-.tab.on{
-  display:block
-}
-.tab-container{
-  display:flex;justify-content:center;gap:20px;margin-top:50px;font-size:18px
-}
-.tabs{
-  padding:10px 20px;border-radius:50px;font-weight:700;cursor:pointer;background:#f2f2f2;transition:all .3s
-}
-.tabs:hover{
-  padding:10px 30px
-}
-.tabs.on{
-  color:#fff;background:#111
-}
-.tab_wrap{
-  margin-top:30px;padding:50px;text-align:center;background:#f2f2f2
-}
-
-
-
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css"); /* regular-400, medium-500, semibold-600, bold-700 */
-
-body,
-html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-
-}
-ul,
-li,
-dl,
-dt,
-dd,
-p,
-span {
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-}
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-*,
-:after,
-:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  top:100vh;
 }
 
 .tab {
@@ -344,20 +279,21 @@ a {
   justify-content: center;
   gap: 50px;
   margin-top: 50px;
-  font-size: 2.2rem;
+  font-size:1.2vw;
   position: relative;
   top: -0px;
 }
 .tabs {
-  padding: 10px 20px;
+  padding: 10px 30px;
   border-radius: 50px;
   font-weight: 400;
   cursor: pointer;
   background: #FEEBF0;
   transition: all 0.3s;
+  margin-bottom: 100px;
 }
 .tabs:hover {
-  padding: 10px 30px;
+  padding: 10px 50px;
 }
 .tabs.on {
   color: #fff;
@@ -365,7 +301,7 @@ a {
 }
 .tab_wrap {
   margin-top: 30px;
-  padding: 100px 50px;
+  
   text-align: center;
   background: #FFF;
 }
@@ -377,38 +313,14 @@ body {
   overflow-x: hidden;
 }
 
-#Tab1 img{
-  margin-bottom: 144px;
-}
-.car{
-  margin-left: -50px;
-}
-.btm2 img, .btm3 img{
-  margin-left: 17px;
-  margin-right: 15px;
-}
-
-.btm2{
-  display: flex;
-  margin-left: 130px;
-}
-
-.stars{
-  position: fixed;
-  top: 230px;
-  left: 520px;
-}
-
 .image-container {
-  position: relative;
- 
+  position: relative; 
   cursor: pointer;
+  width: 90%; margin: 0 auto 100px;
 }
 
 .image-container img {
-/*   width: 100%;
-  height: 100%; */
-  object-fit: cover;
+  width: 100%;  
   transition: transform 0.3s ease;
 }
 
@@ -417,9 +329,8 @@ body {
 .overlay {
   position: absolute;
   top: 0;
-  left: 150px;
-  width: 83.3%;
-  height: 85.5%;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -432,6 +343,8 @@ body {
 }
 
 .overlay-content {
+  width: 100%;
+  height: 100%;
   color: #fff;
   text-align: center;
   position: relative;
@@ -471,11 +384,14 @@ body {
 
 
 
+.btm { width:90%; margin: 0 auto; overflow: hidden; }
+.btm2 { display: flex; margin-bottom: 100px; }
+.btm2>div { width: 50%;}
+.image-container2 img { width: 100%; }
 
 
 .image-container2 {
-  position: relative;
- 
+  position: relative; 
   cursor: pointer;
 }
 
@@ -491,9 +407,9 @@ body {
 .overlay2 {
   position: absolute;
   top: 0;
-  left: 17px;
-  width: 96%;
-  height: 77%;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -544,33 +460,27 @@ body {
 
 
 
-.btm3{
-  display: flex;
-  margin-left: 66px;
-
-}
+.btm3 {  display: flex; height: 50vh; overflow: hidden; }
+.btm3>div:nth-child(1) { width:65%; }
+.btm3>div:nth-child(2) { width:35%; }
 
 .image-container3 {
-  position: relative;
- 
+  position: relative; 
   cursor: pointer;
 }
 
 .image-container3 img {
-/*   width: 100%;
-  height: 100%; */
+  width: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-
-
-.overlay3 {
+.overlay3, .overlay4 {
   position: absolute;
   top: 0;
-  left: 17px;
-  width: 97%;
-  height: 77%;
+  left:0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -607,8 +517,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 83px;
-  height: 78px;
   background: url('check.png') no-repeat center;
   background-size: cover;
   opacity: 0;
@@ -623,29 +531,14 @@ body {
 
 
 .image-container4 {
-  position: relative;
- 
+  position: relative; 
   cursor: pointer;
 }
 
 .image-container4 img {
-/*   width: 100%;
-  height: 100%; */
+  width: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
-}
-
-.overlay4 {
-  position: absolute;
-  top: 0;
-  left: 17px;
-  width: 94%;
-  height: 77%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 .image-container4:hover .overlay4 {
@@ -655,7 +548,7 @@ body {
 .overlay-content4 {
   color: #fff;
   text-align: center;
-  position: relative;
+  position: absolute;
 }
 
 .overlay-content4 a {
@@ -663,7 +556,6 @@ body {
   color: #fff;
   font-size: 3.5rem;
   font-weight: bold;
-  margin: 0 70px;
   transition: transform 0.3s ease;
   position: relative;
   top: 220px;
@@ -694,7 +586,8 @@ body {
 }
 
 .gotop{
-  margin-bottom: -100px;
+  margin :100px auto;
+  padding-bottom: 100px;
 }
 
 .p2::after {
