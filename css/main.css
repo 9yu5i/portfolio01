@@ -124,7 +124,7 @@ body { background: url(../img/main/opacity.png); }
 }
 .frame5 {
   position: absolute;
-  right: 34%;
+  right: 36%;
   top: 32px;
 }
 .frame{
@@ -386,7 +386,7 @@ body { background: url(../img/main/opacity.png); }
 
 /* .name에 호버 시 이미지가 순서대로 나타나도록 설정 */
 
-.namr{
+.name{
   cursor: pointer;
   margin-top: -50%;
 }
