@@ -292,31 +292,31 @@ body { background: url(../img/main/opacity.png); }
 /* 각 이미지의 위치 설정 */
 .img1 {
   top: -70px;
-  left: 600px;
+  left: 500px;
   transform: translateY(20px);
 }
 
 .img2 {
   top: -20px;
-  left: 700px;
+  left: 600px;
   transform: translateY(20px);
 }
 
 .img3 {
   top: -50px;
-  left: 800px;
+  left: 700px;
   transform: translateY(20px);
 }
 
 .img4{
   top: -100px;
-  left: 800px;
+  left: 700px;
   transform: translateY(20px);
 }
 
 .img5{
   top: -80px;
-  left: 765px;
+  left: 665px;
   transform: translateX(20px);
 }
 
