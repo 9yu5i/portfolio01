@@ -316,7 +316,7 @@ body{
 }
 
 .svgg{
-  position: relative;
+  position: fixed;
   left: 50%;
   transform: translateX(-21%);
   top: 5vh;
